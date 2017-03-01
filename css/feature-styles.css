@@ -1,0 +1,111 @@
+h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    color: #263238;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+
+h3 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.4px;
+}
+div,
+p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    color: #555555;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17.5px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+pre {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+.gray-info{
+    color: #888888;
+}
+.gray-info--with-dividers::after,
+.gray-info--with-dividers::before{
+    content: '|';
+    color: #888888;
+    font-size:20px;
+    display: inline-block;
+    margin:0 5px;
+}
+.gray-info--with-dividers::after{
+    content: '|';
+}
+.rhombus-divider{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    margin:0 5px;
+    background: #888888;
+    vertical-align: middle;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.centered-object{
+    margin: 0 auto;
+}
+
+.wrapper{
+    max-width:1200px;
+    margin:0 auto;
+}
+.feature-one{
+    position: relative;
+}
+.feature-one .image-container{
+    width:100%;
+}
+.feature-one .image-container img{
+    width: 100%;
+    display: block;
+}
+.feature-one .content-container{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    padding:10px 11px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+}
+.feature-one .content-container h1{
+    color: #cfd8dc;
+    margin:0 0 19px 0;
+}
+.feature-one .content-container .content-info{
+    color: #cfd8dc;
+}
