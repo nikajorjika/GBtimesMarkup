@@ -7,6 +7,10 @@
 
     $( window ).on('load',function() {
         initCarousel();
+
+        //Handles navigation hover and active list item border
+        // activeNavHandler();
+        // $( '.nav-bar ul li' ).mouseenter( navItemEnter ).mouseleave( navItemLeave );
     });
 
     function initCarousel(){
@@ -52,5 +56,19 @@
         if( $('.carousel-item.active').prev().length)
             $('.carousel-item.active').removeClass('active').prev().addClass('active');
     }
+
+    // function navItemEnter(){
+    //     $(this).find('a').css('border-right','none');
+    //     $(this).prev().find('a').css('border-right','none');
+    // }
+    // function navItemLeave(){
+    //     $(this).find('a').css('border-right','1px solid #ffffff');
+    //     $(this).prev().find('a').css('border-right','1px solid #ffffff');
+    // }
+    // function activeNavHandler(){
+    //     var activeItem = $( '.nav-bar ul li.active' );
+    //     activeItem.find('a').css('border-right','none');
+    //     activeItem.prev().find('a').css('border-right','none');
+    // }
 })(jQuery);
 
